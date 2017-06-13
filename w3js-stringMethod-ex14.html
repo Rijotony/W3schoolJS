@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>JavaScript String Methods</h1>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft and Microsoft!</p>
+
+<script>
+	function myFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var txt = str.replace(/Microsoft/g,"W3Schools");
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+<!--To replace all matches, use a regular expression with a /g flag (global match) -->
+
+</body>
+</html>
