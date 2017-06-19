@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>The unShift() method adds new elements to the beginning of an array.</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+var fruits =["Mango","Orange","Apple","Banana"];
+document.getElementById('demo').innerHTML = fruits;
+function myFunction() {
+	fruits.unshift("Lemon");	
+	document.getElementById('demo').innerHTML = fruits; 
+	}
+</script>
+
+</body>
+</html>
