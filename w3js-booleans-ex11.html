@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Never create booleans as objects.</p>
+<p>Booleans and objects cannot be safely compared.</p>
+<p id="demo"></p>
+
+<script>
+var x = false;               // x is a boolean
+var y = new Boolean(false);  // y is an object
+document.getElementById("demo").innerHTML =(x === y);
+
+</script>
+<!--using the == operator,equal booleans are equal. And 
+using the === operator, operator expects equality in both type and value.
+-->
+</body>
+</html>
