@@ -9,6 +9,7 @@
 var x = 0;
 document.getElementById("demo").innerHTML = Boolean(x=10);
 </script>
-<!-- Boolean(x = 0); evalutes "false"-->
+<!-- Boolean(x = 0); and Boolean( x=0 ); both evalutes "false".
+JavaScript programs may generate unexpected results if a programmer accidentally uses an assignment operator (=), instead of a comparison operator (==) in an if statement.-->
 </body>
 </html>
