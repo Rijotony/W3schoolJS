@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+	function person(fname,lname,age){
+		this.fname = fname;
+		this.lname = lname;
+		this.age = age;
+		this.changeName = function(name){
+			this.lname = name;
+		}
+	}
+	var mySon = new person("Ryan","Tony",17);
+	mySon.changeName("Kannampuzha");
+document.getElementById("demo").innerHTML =
+"My Son's last name is " + mySon.lname;
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+	function person(first,last,age){
+		this.firstName = first;
+		this.lastName = last;
+		this.age = age;
+		this.nationality = "Indian";
+	
+	}
+	var mySon = new person("Ryan","Tony",17);
+	var myDaughter = new person("Ria","Tony",20);
+
+	
+	document.getElementById('demo').innerHTML = 
+	"My Son is " + mySon.nationality;
+	//To add a new property to a prototype, you must add it to the constructor function
+</script> 
+</body>
+</html>
